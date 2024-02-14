@@ -28,7 +28,7 @@ function Home() {
                                 <div className='posterImage'>
                                     <img src={` https://image.tmdb.org/t/p/original/${movie && movie.backdrop_path}`} />
                                 </div>
-                                <div className='posterImage_overlay'>
+                                <div className='posterImage_overplay'>
                                     <div className='posterImage_title'>{movie ? movie.original_title : ""}</div>
                                     <div className='posterImage_runtime'>{movie ? movie.release_date : ""}
 
@@ -46,8 +46,8 @@ function Home() {
                         ))
                     }
                 </Carousel>
-                <Movielist />
             </div >
+                <Movielist />
 
         </>
     )

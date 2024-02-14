@@ -63,7 +63,7 @@
 
 .movie__genre {
     padding: .5rem;
-    border: 2px solid white;
+    border: 2px solid black;
     border-radius: 20px;
     margin-right: 1rem;
 }
@@ -72,6 +72,7 @@
 .movie__detailRightBottom {
     margin: .8rem 0;
     flex: 0.8;
+    color: black;
 }
 
 .synopsisText {
@@ -81,9 +82,11 @@
     display: flex;
     position: relative;
     align-items: center;
+    color: black;
 }
 .synopsisText > div:last-of-type {
     margin-left: auto;
+    color: black;
 }
 
 .movie__links {
@@ -92,10 +95,12 @@
     display: flex;
     justify-content: space-between;
     width: 75%;
+    color: black;
 }
 
 .movie__heading {
     font-size: 2.2rem;
+    color: black;
 }
 
 .movie__Button {
