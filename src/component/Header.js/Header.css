@@ -10,7 +10,7 @@
     
 }
 a > span{
-    margin: 0 30px;
+    margin: 0 10px;
     font-size: 1.3rem;
     cursor: pointer;
     color: white;
@@ -30,10 +30,10 @@ a > span:hover{
     font-size: 2rem;
 }
 .hearder-name{
-   align-items: flex-start; 
+   
     font-weight: 900;
-   font-size: 1rem;
+   font-size: .9rem;
    color: rgb(50, 183, 50);
    box-shadow: 0,0,0,0 black(0,0,0,.5S);
-   
+   margin-right: 20px;
 }

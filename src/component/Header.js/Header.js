@@ -7,13 +7,14 @@ function Header() {
     return (
         <div className='header'>
             <div className='headerLeft'>
-                <div className='hearder-name'>
-                    <Link to={"/"}> <img className='header_icon' src={Icon} /></Link>
-                    <h2 >Movies_Thikana</h2>
-                </div>
+                <Link to={"/"}> <img className='header_icon' src={Icon} /></Link>
+
                 <Link to={"/movies/popular"} style={{ textDecoration: "none" }}> <span>Popular</span> </Link>
                 <Link to={"/movies/top_rated"} style={{ textDecoration: "none" }}><span>Top_Reted</span> </Link>
                 <Link to={"/movies/upcoming"} style={{ textDecoration: "none" }}><span>Upcoming</span> </Link>
+            </div>
+            <div className='hearder-name'>
+                <h2 >Movies_Thikana</h2>
             </div>
         </div>
     )
