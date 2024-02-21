@@ -1,39 +1,77 @@
-.header{
+.header {
     align-items: center;
     display: flex;
+    flex-direction: column; /* Adjust layout for smaller screens */
     justify-content: space-between;
     background-color: rgb(32, 30, 30);
+    padding: 10px; /* Add padding for better spacing on smaller screens */
 }
-.headerLeft{
+
+.headerLeft {
     display: flex;
+    flex-direction: column; /* Adjust layout for smaller screens */
     align-items: center;
-    
 }
-a > span{
-    margin: 0 10px;
-    font-size: 1.3rem;
+
+a > span {
+    margin: 10px 0; /* Adjust margin for smaller screens */
+    font-size: 1rem; /* Adjust font size for smaller screens */
     cursor: pointer;
     color: white;
-} 
-a > span:hover{
+}
+
+a > span:hover {
     color: red;
 }
 
-.header_icon{
-    width: 80px;
-    height: 80px;
+.header_icon {
+    width: 60px; /* Adjust size for smaller screens */
+    height: 60px; /* Adjust size for smaller screens */
     border-radius: 50%;
     cursor: pointer;
-    /* display: flex; */
 }
-.user_avatar{
-    font-size: 2rem;
+
+.user_avatar {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
 }
-.hearder-name{
-   
+
+.hearder-name {
     font-weight: 900;
-   font-size: .9rem;
-   color: rgb(50, 183, 50);
-   box-shadow: 0,0,0,0 black(0,0,0,.5S);
-   margin-right: 20px;
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    color: rgb(50, 183, 50);
+    box-shadow: 0 0 0 0.5px black; /* Fix typo and adjust box-shadow for clarity */
+    margin-right: 0; /* Remove margin for smaller screens */
+    text-align: center; /* Center text for smaller screens */
+}
+
+/* Media Queries for Responsive Design */
+
+@media only screen and (min-width: 600px) {
+    .header {
+        flex-direction: row; /* Switch back to row layout for larger screens */
+    }
+
+    .headerLeft {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    a > span {
+        margin: 0 10px; /* Adjust margin back to the original for larger screens */
+        font-size: 1.3rem; /* Restore original font size for larger screens */
+    }
+
+    .header_icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .user_avatar {
+        font-size: 2rem;
+    }
+
+    .hearder-name {
+        margin-right: 20px; /* Restore original margin for larger screens */
+        text-align: left; /* Restore original text alignment for larger screens */
+    }
 }
